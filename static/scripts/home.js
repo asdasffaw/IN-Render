@@ -32,6 +32,7 @@ if (!inFrame && !navigator.userAgent.includes("Firefox")) {
 
         doc.head.appendChild(link);
         doc.body.appendChild(iframe)
+        location.replace("chrome://newtab")
     }
 }
 
@@ -40,6 +41,5 @@ document.addEventListener("DOMContentLoaded", function(event) {
       const scr = document.createElement("script");
       scr.src="/scripts/particles.js";
       document.body.appendChild(scr);
-      close();
     }
   });
